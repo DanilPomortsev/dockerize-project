@@ -1,2 +1,3 @@
 docker-compose up
-для запуска приложения в контейнерах
+
+for running applications in containers
