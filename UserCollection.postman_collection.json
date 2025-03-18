@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "5cd1b75c-c736-4628-87e8-b4355f13bc9a",
+		"name": "UserCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30635759"
+	},
+	"item": [
+		{
+			"name": "GetAllUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/all-users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"all-users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveUser",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"some\",\r\n    \"email\": \"some\",\r\n    \"description\": \"some\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/save-user",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
