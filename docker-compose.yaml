@@ -8,9 +8,13 @@ services:
       POSTGRES_USER: "postgres"
     ports:
       - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
   app:
     build: .
     ports:
       - "8080:8080"
     depends_on:
       - db
+volumes:
+  db_data:
